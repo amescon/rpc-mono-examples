@@ -6,6 +6,13 @@ This repository includes small Mono example applications in C# that use rs-485 p
 - rs485_read
  An example application that receives 10 bytes from the rs-485 port and displays them afterwards.
 
+Required Prerequisites:
+  - Mono
+    'sudo apt-get install mono-mcs'
+
+  - raspicomm rs485 device driver
+    you can use the the script from https://gist.github.com/8/5029497 to install the kernel module
+
 How to use the examples:
 0. use git to clone this repository 
  'git clone https://github.com/amescon/rpc-mono-examples.git'
