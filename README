@@ -19,12 +19,12 @@ How to use the examples:
 
 1. build the examples applications with make and run them
  1.1 rs485_write
-  'cd ./rs485_write'
+  'cd Rs485Write'
   'make'
   './rs485_write.exe'
 
  1.2 rs485_read
-  'cd rs485_read'
+  'cd Rs485Read'
   'make'
   './rs485_read.exe'
 
