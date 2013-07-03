@@ -1,31 +1,26 @@
-This repository includes small Mono example applications in C# that use rs-485 port of the raspicomm.
+This repository includes small Mono example applications in C# that use the RS-485 port of the Raspicomm.
 
-- rs485_write
- An example application that sends a Hello World message over the rs-485 port.
+Here is how to use it:
 
-- rs485_read
- An example application that receives 10 bytes from the rs-485 port and displays them afterwards.
+- You will need Mono to use these applications. To install Mono, use this command:
+  sudo apt-get install mono-mcs
 
-Required Prerequisites:
-  - Mono
-    'sudo apt-get install mono-mcs'
+- Use GIT to clone the repository to your Raspberry Pi:
+  git clone https://github.com/amescon/rpc-mono-examples.git
 
-  - raspicomm rs485 device driver
-    you can use the the script from https://gist.github.com/8/5029497 to install the kernel module
+- The repository includes the following sample apps:
+  - Rs485Write
+    Sends "Hello World" over the RS-485 port.
+  - Rs485Read
+    Receives 10 bytes from the RS-485 port and displays them afterwards.
 
-How to use the examples:
-0. use git to clone this repository 
- 'git clone https://github.com/amescon/rpc-mono-examples.git'
+- Change to the directory of the application that you want to run, e.g.:
+  cd rpc-mono-examples/Rs485Write
 
-1. build the examples applications with make and run them
- 1.1 rs485_write
-  'cd Rs485Write'
-  'make'
-  './rs485_write.exe'
+- Compile the code into an executable:
+  make
 
- 1.2 rs485_read
-  'cd Rs485Read'
-  'make'
-  './rs485_read.exe'
+- Run it, e.g.:
+  ./rs485_write
 
-2. modify the code and play around with it
+- Time to have some fun! Modify the code, compile it once more and test your changes!
